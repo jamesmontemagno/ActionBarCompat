@@ -1,0 +1,3 @@
+/Users/jamesmontemagno/Documents/GitHub/ActionBarCompat/ActionBarCompat/bin/Debug/GooglePlusSignIn.dll
+/Users/jamesmontemagno/Documents/GitHub/ActionBarCompat/Components/xamandroidsupportv7appcompat-7.18.0/lib/android/Xamarin.Android.Support.v4.dll
+/Users/jamesmontemagno/Documents/GitHub/ActionBarCompat/Components/xamandroidsupportv7appcompat-7.18.0/lib/android/Xamarin.Android.Support.v7.AppCompat.dll
