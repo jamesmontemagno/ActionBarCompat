@@ -46,10 +46,10 @@
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
     <Reference Include="Xamarin.Android.Support.v4">
-      <HintPath>..\Components\xamandroidsupportv7appcompat-7.18.0\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+      <HintPath>Components\xamandroidsupportv7appcompat-7.18.0\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
-      <HintPath>..\Components\xamandroidsupportv7appcompat-7.18.0\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <HintPath>Components\xamandroidsupportv7appcompat-7.18.0\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -85,11 +85,10 @@
     <AndroidResource Include="Resources\menu\main_menu.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup />
   <ItemGroup>
     <XamarinComponentReference Include="xamandroidsupportv7appcompat">
-      <Version>7.18.0</Version>
       <Visible>False</Visible>
+      <Version>7.18.0</Version>
     </XamarinComponentReference>
   </ItemGroup>
 </Project>
