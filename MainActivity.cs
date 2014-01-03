@@ -13,7 +13,7 @@ using Android.Support.V4.View;
 
 namespace GooglePlusSignIn
 {
-	[Activity (Label = "ActionBarCompat", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light", MainLauncher = true)]
+    [Activity(Label = "ActionBarCompat", Icon = "@drawable/ic_launcher", Theme = "@style/Theme.AppCompat.Light", MainLauncher = true/*, UiOptions = Android.Content.PM.UiOptions.SplitActionBarWhenNarrow*/)]
 	//[MetaData ("android.support.UI_OPTIONS", Value = "splitActionBarWhenNarrow")]//If you wanted to slit it!
 	public class MainActivity : ActionBarActivity
 	{
@@ -24,18 +24,17 @@ namespace GooglePlusSignIn
 
 			// Needs to be called before setting the content view
 			SupportRequestWindowFeature((int)WindowFeatures.IndeterminateProgress);
-            SupportRequestWindowFeature((int)WindowFeatures.Progress);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			SetSupportProgressBarIndeterminate (true);
 
 			var button = FindViewById<Button> (Resource.Id.progress_button);
 			button.Click += (sender, e) => {
 				// Switch the state of the ProgressBar and set it
 				indeterminateVisible = !indeterminateVisible;
 				SetSupportProgressBarIndeterminateVisibility(indeterminateVisible);
+                
 				// Update the button text
 				button.Text = indeterminateVisible ? "Stop Progress" : "Start Progress";
 
