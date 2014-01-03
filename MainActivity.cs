@@ -24,6 +24,7 @@ namespace GooglePlusSignIn
 
 			// Needs to be called before setting the content view
 			SupportRequestWindowFeature((int)WindowFeatures.IndeterminateProgress);
+            SupportRequestWindowFeature((int)WindowFeatures.Progress);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
